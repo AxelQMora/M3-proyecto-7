@@ -17,41 +17,47 @@
         <section class="container" id="password">
 
             <span> PASSWORD </span>
-            <button> <i style="font-size:24px" class="fa">&#xf0c5;</i> </button>
+            <button class="copy"> <i style="font-size:24px" class="fa">&#xf0c5;</i> </button>
 
         </section>
 
-        <section class="container" id="selector">
-            <div>
+        <section class="container">
+            <div id="length">
                 <p>Character Lenght</p>
                 <span> #N </span>
             </div>
 
-            <div id="bar">
-                <input type="range" min="1" max="15" value="50" class="slider" id="myRange">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>
 
-            <input type="checkbox" class="checkbox" id="include-upp-case">
-            <label for="include-upp-case"> I have a bike</label><br>
-            <input type="checkbox" class="checkbox" id="include-low-case">
-            <label for="include-low-case"> I have a car</label><br>
-            <input type="checkbox" class="checkbox" id="include-numbers">
-            <label for="include-numbers"> I have a boat</label><br>
-            <input type="checkbox" class="checkbox" id="include-symbols">
-            <label for="include-symbols"> I have a boat</label><br>
+            <div>
+                <input type="checkbox" class="checkbox" id="include-upp-case">
+                <label for="include-upp-case"> Include Uppercase Letters</label><br>
+                <input type="checkbox" class="checkbox" id="include-low-case">
+                <label for="include-low-case"> Include Lowercase Letters</label><br>
+                <input type="checkbox" class="checkbox" id="include-numbers">
+                <label for="include-numbers"> Include Numbers</label><br>
+                <input type="checkbox" class="checkbox" id="include-symbols">
+                <label for="include-symbols"> Include Symbols</label><br>
+            </div>
+            
 
-            <div id="strenght-meter">
-                <p>STRENGTH</p>
-                <p>STRONG</p>
+            <div id="strength-meter">
+                <div>
+                    <p>STRENGTH</p>
+                </div>
+                
                 <div class="indicator">
-                    <span class="bar-strength-meter"></span>
-                    <span class="bar-strength-meter"></span>
-                    <span class="bar-strength-meter"></span>
-                    <span class="bar-strength-meter"></span>
+                    <p>STRONG</p>
+                    <div class="bar-strength-meter"></div>
+                    <div class="bar-strength-meter"></div>
+                    <div class="bar-strength-meter"></div>
+                    <div class="bar-strength-meter"></div>
                 </div>
             </div>
 
-            <button>Generate &#x2192; </button>
+            <button id="generate-button">Generate &#x2192; </button>
 
         </section>
 
