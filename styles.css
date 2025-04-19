@@ -80,7 +80,7 @@ h1 {
     font-size: 1rem;
 }
 
-.slidecontainer {
+#slidecontainer {
     width: 90%; /* Width of the outside container */
   }
   
