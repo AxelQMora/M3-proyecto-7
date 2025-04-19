@@ -1,0 +1,19 @@
+
+
+
+.indicator {
+    display: flex;
+    gap: 4px;
+    margin: 8px 0;
+  }
+
+.bar-strength-meter{
+    flex: 1;
+    height: 8px;
+    background-color: #FFD700; /* Yellow color */
+    border-radius: 2px;
+  }
+  
+  .bar.inactive {
+    background-color: #E0E0E0; /* Gray for inactive bars */
+  }
