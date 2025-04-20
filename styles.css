@@ -7,6 +7,7 @@
  --clr-medium: #d7f207 ;
  --clr-strong: #07f24e ;
  --clr-white: #f7f3f2;
+ --clr-grey: #918c8c;
 }
 
 * {
@@ -40,7 +41,7 @@ body {
     
 }
 
-.copy {
+#copy {
     color: var(--clr-containers);
     background-color: var(--clr-backrgoud);
     border-style: none;
@@ -48,7 +49,7 @@ body {
     opacity: 0.8;
 }
 
-.copy:hover {
+#copy:hover {
     scale: 1.05;
     transition: .2s;
     opacity: 1;
@@ -129,13 +130,17 @@ h1 {
 .bar-strength-meter{
     width: 7px;
     height: 50%;
-    background-color: #FFD700; /* Yellow color */
+    background-color: var(--clr-theme);
     border-radius: 2px;
   }
   
   .bar.inactive {
     background-color: #E0E0E0; /* Gray for inactive bars */
   }
+
+#category {
+    text-transform: uppercase;
+}
 
   #generate-button {
     background-color: var(--clr-backrgoud);
