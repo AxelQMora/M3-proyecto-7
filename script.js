@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Copy password
     copy.addEventListener('click', function(){
         navigator.clipboard.writeText(passwordStorage)
-        .then(() => alert('Copiado en el portapapeles!'))
-        .catch(err => console.error('Falla al copiar:', err));
+        .then(() => alert('Copied to clipboard!'))
+        .catch(err => console.error('Failed to copy:', err));
     });
 
     

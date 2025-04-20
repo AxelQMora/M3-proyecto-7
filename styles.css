@@ -130,13 +130,10 @@ h1 {
 .bar-strength-meter{
     width: 7px;
     height: 50%;
-    background-color: var(--clr-theme);
+    background-color: var(--clr-grey);
     border-radius: 2px;
   }
   
-  .bar.inactive {
-    background-color: #E0E0E0; /* Gray for inactive bars */
-  }
 
 #category {
     text-transform: uppercase;
